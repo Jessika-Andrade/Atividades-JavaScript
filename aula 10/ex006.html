@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+
+    <style>
+        div {
+            background-color: green;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+            text-shadow: 2px 2px 1px  black;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'yellow'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'Blue'
+        }
+        setTimeout(() => {
+            a.innerText = 'interaja'
+            a.style.background = 'green'
+        }, 5000);
+
+    </script>
+
+</body>
+</html>

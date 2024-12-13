@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual é o seu nome? ")
+        var nickname = window.prompt("Qual é o seu apelido?")
+        var estado = window.prompt("De que estado você é?")
+        document.write(`Meu nome é <strong>${nome}</strong>! Meu nome tem ${nome.length} letras. <br>`) 
+        document.write(`Meu apelido é <strong>${nickname.toLowerCase()}</strong>. <br/>`)
+        document.write(`Eu sou de ${estado.toUpperCase()}.`)
+    </script>
+</body>
+</html>
